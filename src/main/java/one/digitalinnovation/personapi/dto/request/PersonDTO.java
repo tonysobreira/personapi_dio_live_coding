@@ -17,23 +17,23 @@ import java.util.List;
 @NoArgsConstructor
 public class PersonDTO {
 
-    private Long id;
+	private Long id;
 
-    @NotEmpty
-    @Size(min = 2, max = 100)
-    private String firstName;
+	@NotEmpty
+	@Size(min = 2, max = 100)
+	private String firstName;
 
-    @NotEmpty
-    @Size(min = 2, max = 100)
-    private String lastName;
+	@NotEmpty
+	@Size(min = 2, max = 100)
+	private String lastName;
 
-    @NotEmpty
-    @CPF
-    private String cpf;
+	@NotEmpty
+	@CPF
+	private String cpf;
 
-    private String birthDate;
+	private String birthDate;
 
-    @Valid
-    @NotEmpty
-    private List<PhoneDTO> phones;
+	@Valid
+	@NotEmpty
+	private List<PhoneDTO> phones;
 }
